@@ -1,12 +1,16 @@
 import React from 'react';
+import * as S from './style';
 
 const Footer = () => {
   return (
-    <footer>
-      <section className="title">
-        <strong>growth plans</strong>
-        <p>take your business to the next level</p>
-        <div className="bars">
+    <S.Footer>
+      <S.Wrapper>
+        <div className="title-content">
+          <strong className="title">growth plans</strong>
+          <p className="subtitle">take your business to the next level</p>
+        </div>
+
+        <div id="bars">
           <div className="bar">
             <div className="top">
               <strong>$100</strong>
@@ -79,8 +83,8 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </section>
-    </footer>
+      </S.Wrapper>
+    </S.Footer>
   );
 };
 
